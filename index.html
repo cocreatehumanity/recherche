@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="fr" data-lang="fr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoCreate Humanity · Projet de recherche</title>
+<meta name="description" content="Blessures «&nbsp;intersectionnelles&nbsp;» dans les récits des travailleur·se·s humanitaires et le rôle potentiel du soutien par les pairs dans la reconstruction narrative et symbolique. Recherche qualitative, CoCreate Humanity, Université Claude Bernard Lyon 1, Le Vinatier, Centre ressource de réhabilitation psychosociale.">
+
+<!-- Aperçu lors du partage (LinkedIn, WhatsApp) -->
+<meta property="og:title" content="Blessures «&nbsp;intersectionnelles&nbsp;» dans les récits des travailleur·se·s humanitaires et le rôle potentiel du soutien par les pairs dans la reconstruction narrative et symbolique">
+<meta property="og:description" content="Recherche qualitative · CoCreate Humanity · Université Claude Bernard Lyon 1 · Le Vinatier · Centre ressource de réhabilitation psychosociale">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cocreatehumanity.github.io/recherche/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="index_files/css2_UwgY.css" rel="stylesheet">
+
+<style>
+:root{
+  --indigo:#382764;
+  --indigo-deep:#2c1d51;
+  --cream:#faf7f0;
+  --card:#f3ecdf;
+  --gold:#b8912f;
+  --gold-soft:#c9a961;
+  --rule:#dcc9a0;
+  --ink:#3d3d43;
+  --ink-soft:#5c5c66;
+  --display:"Cormorant Garamond",Georgia,serif;
+  --body:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.68;-webkit-font-smoothing:antialiased}
+
+/* ---------- bascule de langue ---------- */
+[data-lang="fr"] .en{display:none}
+[data-lang="en"] .fr{display:none}
+
+.langbar{position:absolute;top:20px;right:24px;display:flex;gap:8px;z-index:10}
+.langbar button{font-family:var(--body);font-size:13px;font-weight:500;color:#e8e2f2;
+  background:transparent;border:1px solid rgba(255,255,255,.28);border-radius:999px;
+  padding:7px 18px;cursor:pointer;transition:background .2s,color .2s}
+.langbar button:hover{background:rgba(255,255,255,.1)}
+.langbar button[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#241a3f}
+.langbar button:focus-visible{outline:2px solid var(--gold-soft);outline-offset:2px}
+
+/* ---------- structure ---------- */
+.wrap{max-width:900px;margin:0 auto;padding:0 28px}
+section{padding:64px 0}
+.eyebrow{font-size:11.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:14px}
+h2{font-family:var(--display);font-size:33px;font-weight:600;line-height:1.25;
+  color:var(--indigo);margin-bottom:22px}
+h3{font-family:var(--display);font-size:21px;font-weight:600;color:var(--indigo);margin-bottom:8px}
+p{margin-bottom:16px;color:var(--ink-soft)}
+p:last-child{margin-bottom:0}
+strong{color:var(--indigo);font-weight:600}
+em{font-style:italic}
+hr{border:0;border-top:1px solid var(--rule);margin:0}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--indigo);color:#fff;padding:104px 0 70px;overflow:hidden}
+.hero::after{content:"";position:absolute;top:-160px;right:-160px;width:520px;height:520px;
+  background:radial-gradient(circle,rgba(150,120,220,.32),transparent 68%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.kicker{font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--gold-soft);margin-bottom:26px}
+.hero h1{font-family:var(--display);font-weight:600;font-size:47px;line-height:1.18;
+  letter-spacing:.005em;margin-bottom:24px}
+.hero h1 em{color:#e3c169;font-style:italic}
+.lede{font-size:16px;color:#cfc6e4;max-width:640px;margin-bottom:32px}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pill{font-size:13px;color:#ddd6ee;border:1px solid rgba(255,255,255,.24);
+  border-radius:999px;padding:8px 18px}
+
+/* ---------- trois apports ---------- */
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:34px}
+.trio .icon{font-size:26px;margin-bottom:12px;display:block}
+.trio p{font-size:15px}
+
+/* ---------- étapes ---------- */
+.steps{margin-top:32px}
+.step{display:flex;gap:20px;padding:20px 0;border-top:1px solid var(--rule)}
+.step:last-child{border-bottom:1px solid var(--rule)}
+.step .num{font-family:var(--display);font-size:27px;font-weight:600;color:var(--gold);
+  line-height:1;min-width:30px;padding-top:3px}
+.step p{font-size:15px;margin:0}
+.step h3{font-size:18px;margin-bottom:5px}
+
+/* ---------- note PS ---------- */
+.note{margin-top:30px;background:var(--card);border-left:3px solid var(--gold);
+  border-radius:0 6px 6px 0;padding:18px 22px}
+.note p{font-size:15px;color:var(--indigo);margin:0}
+.note .label{font-weight:600}
+
+/* ---------- documents ---------- */
+.docs{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:32px}
+.doc{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:26px}
+.flag{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  background:var(--indigo);color:#e8dfc4;border-radius:999px;padding:4px 12px;display:inline-block;margin-bottom:14px}
+.doc h3{font-size:18px}
+.doc p{font-size:14.5px;margin-bottom:20px}
+.btn{display:block;text-align:center;background:var(--indigo);color:#fff;text-decoration:none;
+  font-size:14.5px;font-weight:500;border-radius:7px;padding:13px 18px;transition:background .2s}
+.btn:hover{background:var(--indigo-deep)}
+.btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.btn.gold{background:var(--gold);color:#241a3f}
+.btn.gold:hover{background:#a37f26}
+
+/* ---------- QR ---------- */
+.qr{background:var(--indigo);border-radius:12px;padding:40px;display:grid;
+  grid-template-columns:1fr auto;gap:40px;align-items:center;color:#fff}
+.qr .eyebrow{color:var(--gold-soft)}
+.qr h2{color:#fff;font-size:28px;margin-bottom:14px}
+.qr p{color:#cfc6e4;font-size:15px;margin-bottom:24px}
+.qr .btn{display:inline-block;padding:13px 26px}
+.qrcard{background:#fff;border-radius:9px;padding:16px;text-align:center}
+.qrcard img{display:block;width:180px;height:180px}
+.qrcard span{font-size:10px;letter-spacing:.06em;color:#6a6a72;display:block;margin-top:10px;line-height:1.4}
+
+/* ---------- équipe ---------- */
+.team{background:var(--card);border:1px solid var(--rule);border-radius:10px;
+  padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:30px}
+.team>div+div{border-left:1px solid var(--rule);padding-left:36px}
+.team h3{font-size:19px;margin-bottom:10px}
+.team p{font-size:14.5px;margin-bottom:14px}
+.team a{color:var(--indigo);text-decoration:none;font-size:14.5px;display:block;
+  border-bottom:1px solid transparent;width:fit-content}
+.team a:hover{border-bottom-color:var(--gold)}
+
+/* ---------- pied ---------- */
+footer{background:var(--indigo);color:#cfc6e4;text-align:center;padding:34px 0;margin-top:40px}
+footer .line1{font-size:14px;margin-bottom:10px}
+footer .line1 strong{color:var(--gold-soft)}
+footer .fine{font-size:12.5px;color:#9d92bd;max-width:680px;margin:0 auto;line-height:1.6}
+
+/* ---------- mobile ---------- */
+@media(max-width:760px){
+  .hero{padding:96px 0 56px}
+  .hero h1{font-size:31px}
+  .brk{display:none}
+  h2{font-size:26px}
+  .trio,.docs,.qr,.team{grid-template-columns:1fr}
+  .qr{padding:28px;justify-items:center;text-align:center}
+  .team>div+div{border-left:0;border-top:1px solid var(--rule);padding-left:0;padding-top:28px}
+  section{padding:48px 0}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <nav class="langbar" aria-label="Langue / Language">
+    <button type="button" data-set="fr" aria-pressed="true">Français</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </nav>
+
+  <div class="wrap">
+    <p class="kicker">CoCreate Humanity · Université Claude Bernard Lyon 1 · Le Vinatier · Centre ressource de réhabilitation psychosociale</p>
+
+    <h1 class="fr">Blessures «&nbsp;intersectionnelles&nbsp;» dans les récits <br class="brk">des <em>travailleur·se·s humanitaires</em> <br class="brk">et le rôle potentiel du soutien par les pairs <br class="brk">dans la reconstruction narrative et symbolique</h1>
+    <h1 class="en">“Intersectional” Wounds in the Narratives <br class="brk">of <em>Humanitarian Workers</em> <br class="brk">and the Potential Role of Peer Support <br class="brk">in Narrative and Symbolic Reconstruction</h1>
+
+    <p class="lede fr">Une recherche qualitative pour explorer, nommer 
+et accompagner des blessures intersectionnelles, et co-créer des voies 
+de rétablissement communautaires avec et pour les travailleur·se·s 
+humanitaires.</p>
+    <p class="lede en">A qualitative research project to explore, name 
+and accompany intersectional wounds, and co-create community-based 
+recovery pathways with and for humanitarian workers.</p>
+
+    <div class="pills fr">
+      <span class="pill">Approche qualitative</span>
+      <span class="pill">Entrevue confidentielle · 45–60 min</span>
+      <span class="pill">Entièrement anonymisée</span>
+      <span class="pill">Démarche collégiale</span>
+    </div>
+    <div class="pills en">
+      <span class="pill">Qualitative approach</span>
+      <span class="pill">Confidential interview · 45–60 min</span>
+      <span class="pill">Fully anonymised</span>
+      <span class="pill">Collegial approach</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ LE PROJET ============ -->
+<section id="projet">
+  <div class="wrap">
+    <p class="eyebrow fr">Le projet</p>
+    <p class="eyebrow en">The project</p>
+
+    <h2 class="fr">Qu'est-ce que la blessure intersectionnelle ?</h2>
+    <h2 class="en">What is the intersectional wound?</h2>
+
+    <div class="fr">
+      <p>Dans le cadre de ce travail de recherche, nous cherchons à définir ce que nous appelons la <strong>blessure intersectionnelle</strong>
+ : ce n'est pas juste du stress ou un trauma. C'est quand le fil de 
+notre humanité se brise, à partir d'une tension processuelle entre nos 
+valeurs, notre confiance, notre identité propre et le sens de notre 
+engagement, touchés par les réalités du terrain.</p>
+      <p>Nous nous intéressons à la manière dont les épreuves du terrain
+ viennent parfois bousculer notre rapport au sens, à nos valeurs 
+profondes et à notre propre histoire, et à la manière dont <strong>le soutien entre pairs humanitaires</strong>
+ intervient dans la restauration des symboles brisés et l'écriture d'un 
+nouveau récit de soi. La question de savoir comment les blessures 
+spécifiquement humanitaires peuvent être nommées et définies sera 
+explorée à partir des récits singuliers des participant·e·s.</p>
+      <p>Ce projet s'inscrit dans une démarche qui souhaite <strong>déstigmatiser les tabous</strong> autour des blessures complexes et co-créer des dispositifs de rétablissement communautaires adaptés au contexte humanitaire, <em>par, avec et pour les travailleur·se·s humanitaires</em>.</p>
+    </div>
+
+    <div class="en">
+      <p>Within this research framework, we seek to define what we call the <strong>intersectional wound</strong>:
+ this goes beyond stress or trauma. It occurs when the thread of our 
+humanity breaks, out of a processual tension between our values, our 
+trust, our own identity and the sense of our commitment, all affected by
+ the realities of fieldwork.</p>
+      <p>We are interested in how field experiences sometimes unsettle 
+our relationship to meaning, to our deepest values and to our own 
+personal history, and in how <strong>peer support among humanitarian colleagues</strong>
+ takes part in restoring broken symbols and writing a new narrative of 
+the self. How specifically humanitarian wounds can be named and defined 
+will be explored through the singular narratives of participants.</p>
+      <p>This project is part of a broader effort to <strong>destigmatise the taboos</strong> surrounding complex wounds and to co-create adapted community recovery mechanisms within the humanitarian sector, <em>by, with and for humanitarian workers</em>.</p>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<!-- ============ CE QUE LA PARTICIPATION PERMET ============ -->
+<section id="participation">
+  <div class="wrap">
+    <p class="eyebrow fr">Ce que votre participation permet</p>
+    <p class="eyebrow en">What your participation enables</p>
+
+    <h2 class="fr">Ensemble, reconstruire</h2>
+    <h2 class="en">Rebuilding together</h2>
+
+    <div class="trio">
+      <div>
+        <span class="icon" aria-hidden="true">🔤</span>
+        <h3 class="fr">Nommer &amp; légitimer</h3>
+        <h3 class="en">Name &amp; legitimise</h3>
+        <p class="fr">Donner un nom et une légitimité aux blessures complexes qui restent souvent indicibles.</p>
+        <p class="en">Give a name and legitimacy to complex wounds that often remain unspeakable.</p>
+      </div>
+      <div>
+        <span class="icon" aria-hidden="true">🤝</span>
+        <h3 class="fr">Co-concevoir</h3>
+        <h3 class="en">Co-design</h3>
+        <p class="fr">Concevoir ensemble des chemins de rétablissement qui nous ressemblent et respectent nos réalités de terrain.</p>
+        <p class="en">Design together recovery pathways that reflect who we are and respect the realities of fieldwork.</p>
+      </div>
+      <div>
+        <span class="icon" aria-hidden="true">🌱</span>
+        <h3 class="fr">Transformer</h3>
+        <h3 class="en">Transform</h3>
+        <p class="fr">Transformer nos apprentissages collectifs en actions durables au sein des organisations humanitaires.</p>
+        <p class="en">Transform our collective learning into lasting action within humanitarian organisations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<!-- ============ COMMENT PARTICIPER ============ -->
+<section id="participer">
+  <div class="wrap">
+    <p class="eyebrow fr">Comment participer</p>
+    <p class="eyebrow en">How to participate</p>
+
+    <h2 class="fr">Un espace sécurisant pour votre parole</h2>
+    <h2 class="en">A safe space for your voice</h2>
+
+    <p class="fr">Cette étude prend la forme d'un entretien 
+confidentiel, en présentiel ou par téléphone, d'une durée de 45 à 60 
+minutes. La conversation est entièrement anonymisée pour garantir un 
+espace neutre et sûr.</p>
+    <p class="en">This study takes the form of a confidential interview,
+ in person or by phone, lasting 45 to 60 minutes. The conversation is 
+fully anonymised to ensure a neutral and safe space for open dialogue.</p>
+
+    <div class="steps">
+      <div class="step">
+        <span class="num">1</span>
+        <div>
+          <h3 class="fr">Prenez contact</h3>
+          <h3 class="en">Get in touch</h3>
+          <p class="fr">Écrivez un email ou appelez directement pour un échange informel sur le projet et les modalités de participation.</p>
+          <p class="en">Send an email or call directly for an informal exchange about the project and modalities of participation.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="num">2</span>
+        <div>
+          <h3 class="fr">Lisez les documents</h3>
+          <h3 class="en">Read the documents</h3>
+          <p class="fr">Consultez la note conceptuelle et le guide d'entretien pour vous préparer, disponibles ci-dessous.</p>
+          <p class="en">Review the conceptual note and interview guide to prepare, available for download below.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="num">3</span>
+        <div>
+          <h3 class="fr">Partagez votre récit</h3>
+          <h3 class="en">Share your story</h3>
+          <p class="fr">Entretien confidentiel de 45 à 60 minutes : votre parole, votre rythme, dans un cadre bienveillant et non jugeant.</p>
+          <p class="en">A confidential 45 to 60 minute interview: your words, your pace, in a non-judgmental and supportive setting.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="num">4</span>
+        <div>
+          <h3 class="fr">Recevez les résultats</h3>
+          <h3 class="en">Receive the findings</h3>
+          <p class="fr">Les conclusions vous seront restituées pour poursuivre la co-réflexion collective.</p>
+          <p class="en">Results will be shared with all participants to continue our collective co-reflection.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Note ajoutée : nature de l'entrevue -->
+    <div class="note">
+      <p class="fr"><span class="label">À noter :</span> cette entrevue 
+n'est pas un entretien psychologique. Il s'agit d'un échange de pair à 
+pair autour de votre parcours et de votre récit. Votre rythme, vos mots,
+ vos fragilités sont accueillis dans le respect, la bienveillance et le 
+non-jugement.</p>
+      <p class="en"><span class="label">Please note:</span> this 
+interview is not a psychological consultation. It is a peer-to-peer 
+conversation about your trajectory and your own narrative. Your pace, 
+your words and your fragilities are welcomed with respect, care and 
+without judgment.</p>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<!-- ============ DOCUMENTS ============ -->
+<section id="documents">
+  <div class="wrap">
+    <p class="eyebrow fr">Documents de recherche</p>
+    <p class="eyebrow en">Research documents</p>
+
+    <h2 class="fr">Lire davantage</h2>
+    <h2 class="en">Read more</h2>
+
+    <p class="fr">Téléchargez les documents du projet pour en savoir 
+plus sur la méthodologie, le cadre théorique et les objectifs de cette 
+recherche.</p>
+    <p class="en">Download the project documents to learn more about the methodology, theoretical framework and objectives of this research.</p>
+
+    <div class="docs">
+      <div class="doc">
+        <span class="flag">🇫🇷 Français</span>
+        <h3 class="fr">Dossier complet, version française</h3>
+        <h3 class="en">Complete file, French version</h3>
+        <p class="fr">Note conceptuelle, méthodologie et guide d'entretien en français. Comprend les 4 phases d'entretien et les remerciements.</p>
+        <p class="en">Conceptual note, methodology and interview guide in French. Includes the 4 interview phases and acknowledgements.</p>
+        <!-- Vérifiez que ce nom de fichier correspond au vôtre -->
+        <a class="btn" href="CoCreate_Humanity_Projet_de_Recherche.pdf" download="">
+          <span class="fr">⬇ Télécharger (FR)</span><span class="en">⬇ Download (FR)</span>
+        </a>
+      </div>
+      <div class="doc">
+        <span class="flag">🇬🇧 English</span>
+        <h3 class="fr">Dossier complet, version anglaise</h3>
+        <h3 class="en">Complete file, English version</h3>
+        <p class="fr">Version complète en anglais : <em>Intersectional Wounds in Humanitarian Workers and the Role of Peer Support</em>. Note conceptuelle et guide d'entretien.</p>
+        <p class="en">Full English version: <em>Intersectional Wounds in Humanitarian Workers and the Role of Peer Support</em>. Conceptual note and interview guide.</p>
+        <!-- Vérifiez que ce nom de fichier correspond au vôtre -->
+        <a class="btn" href="CoCreate_Humanity_Research_Project.pdf" download="">
+          <span class="fr">⬇ Télécharger (EN)</span><span class="en">⬇ Download (EN)</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QR ============ -->
+<section id="partager">
+  <div class="wrap">
+    <div class="qr">
+      <div>
+        <p class="eyebrow fr">Partager ce projet</p>
+        <p class="eyebrow en">Share this project</p>
+        <h2 class="fr">QR Code de la recherche</h2>
+        <h2 class="en">Research QR Code</h2>
+        <p class="fr">Scannez ce QR code pour accéder à cette page, à partager avec vos collègues humanitaires ou à afficher lors d'événements.</p>
+        <p class="en">Scan this QR code to access this page, share it with your humanitarian peers or display it at events and conferences.</p>
+        <!-- Vérifiez que ce nom de fichier correspond au vôtre -->
+        <a class="btn gold" href="qr-code.png" download="">
+          <span class="fr">Télécharger le QR code</span><span class="en">Download QR code</span>
+        </a>
+      </div>
+      <div class="qrcard">
+        <!-- Vérifiez que ce nom de fichier correspond au vôtre -->
+        <img src="index_files/qr-code_UwgY.png" alt="QR code vers cocreatehumanity.github.io/recherche">
+        <span>COCREATEHUMANITY<br>.GITHUB.IO/RECHERCHE</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ÉQUIPE ============ -->
+<section id="contact">
+  <div class="wrap">
+    <p class="eyebrow fr">Contact &amp; participation</p>
+    <p class="eyebrow en">Contact &amp; participation</p>
+
+    <h2 class="fr">L'équipe de recherche</h2>
+    <h2 class="en">The research team</h2>
+
+    <div class="team">
+      <div>
+        <h3>Nassr Eddine Errami</h3>
+        <p class="fr">Chercheur principal · DU Pair-aidance &amp; Neurodiversité<br>Université Claude Bernard Lyon 1<br>CoCreate Humanity (CCH)</p>
+        <p class="en">Principal Researcher · DU Peer Support &amp; Neurodiversity<br>Université Claude Bernard Lyon 1<br>CoCreate Humanity (CCH)</p>
+        <a href="mailto:neddine@cocreatehumanity.org">neddine@cocreatehumanity.org</a>
+        <a href="tel:+33767973502">+33 7 67 97 35 02</a>
+      </div>
+      <div>
+        <h3>Jean-François Pelletier</h3>
+        <p class="fr">Praticien en pair-aidance &amp; Professeur associé<br>Expert en participation civique, rétablissement personnel et soutien par les pairs</p>
+        <p class="en">Peer Support Practitioner &amp; Associate Professor<br>Expert in civic participation, personal recovery and peer support within care systems</p>
+        <a href="mailto:jean-francois.pelletier@yale.edu">jean-francois.pelletier@yale.edu</a>
+        <a href="https://ca.linkedin.com/in/jean-francois-pelletier-9658441b/en">LinkedIn →</a>
+        <a href="https://www.cocreatehumanity.org">www.cocreatehumanity.org</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="line1"><strong>CoCreate Humanity (CCH)</strong> · Université Claude Bernard Lyon 1 · Le Vinatier · Centre ressource de réhabilitation psychosociale · Lyon Métropole</p>
+    <p class="fine fr">L'association CoCreate Humanity (CCH) est une 
+communauté de pairs humanitaires qui fournit et promeut des solutions 
+intégrales, psychosociales et holistiques pour les travailleur·se·s 
+humanitaires.</p>
+    <p class="fine en">CoCreate Humanity (CCH) is a community of 
+humanitarian peers that provides and promotes integral, psychosocial and
+ holistic solutions for humanitarian workers.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var TITLES = {
+    fr: "CoCreate Humanity · Projet de recherche",
+    en: "CoCreate Humanity · Research Project"
+  };
+  var buttons = document.querySelectorAll(".langbar button");
+
+  function setLang(lang) {
+    document.documentElement.setAttribute("data-lang", lang);
+    document.documentElement.setAttribute("lang", lang);
+    document.title = TITLES[lang];
+    buttons.forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.dataset.set === lang));
+    });
+    try { localStorage.setItem("cch-lang", lang); } catch (e) {}
+  }
+
+  buttons.forEach(function (b) {
+    b.addEventListener("click", function () { setLang(b.dataset.set); });
+  });
+
+  var saved = null;
+  try { saved = localStorage.getItem("cch-lang"); } catch (e) {}
+  if (saved !== "fr" && saved !== "en") {
+    saved = (navigator.language || "fr").slice(0, 2) === "en" ? "en" : "fr";
+  }
+  setLang(saved);
+})();
+</script>
+
+
+
+</body></html>
